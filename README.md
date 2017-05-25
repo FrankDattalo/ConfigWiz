@@ -4,12 +4,12 @@ Dependency managment tool.
 # Requirements
 JDK 8, Scala 2.12, and sbt.
 
-# Install:
+# Install
 ```
 $ sbt assembly
 ```
 
-# Running:
+# Running
 
 ```
 frank@computer:~/Documents/config-wiz$ java -jar target/scala-2.12/config-wiz-assembly-1.0.jar config-wiz/
