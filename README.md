@@ -1,10 +1,11 @@
 # ConfigWiz
+
 ConfigWiz is a dependency manangement tool that produces a serialized list of dependencies provided with an input. The goal of this tool is to make configuration of workstations and software more manageable. ConfigWiz uses a dependency repository model where all dependencies sit within one big repository. ConfigWiz works by created a directed graph of dependencies and resolves them in an order that satisfies all requirements. ConfigWiz can also detect when dependencies are circular or mutually circular and will stop execution. ConfigWiz dependencies are represented as json files which must be named "dependency.json".
 
 File Layout:
-```json
-Dependency to resolve:
 
+The following file would be a standard looking dependency.json.
+```json
 {
   "name": "MyDependency",
   "version": 1,
@@ -27,10 +28,10 @@ Dependency to resolve:
 
 # TODO
 
-Add an upload script to programatically move new dependencies to the repo.
-Add a system to configure script execution.
-Add a web interface for the tool to allow for configuration of new and existing dependencies.
-Allow for remote repository access.
+- Add an upload script to programatically move new dependencies to the repo.
+- Add a system to configure script execution.
+- Add a web interface for the tool to allow for configuration of new and existing dependencies.
+- Allow for remote repository access.
 
 # Requirements
 
