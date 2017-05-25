@@ -3,7 +3,26 @@ ConfigWiz is a dependency manangement tool that produces a serialized list of de
 
 File Layout:
 ```json
+Dependency to resolve:
 
+{
+  "name": "MyDependency",
+  "version": 1,
+  "dependencies" : [
+    {
+      "name": "BasicEmployeePackage",
+      "version": 5
+    },
+    {
+      "name": "DeveloperPackage",
+      "version": 100
+    },
+    {
+      "name": "DataScientistPackage",
+      "version": 4
+    }
+  ]
+}
 ```
 
 # TODO
