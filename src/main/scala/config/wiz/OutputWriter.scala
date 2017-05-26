@@ -36,8 +36,8 @@ object OutputWriter {
       FileUtils.cleanDirectory(f)
     } else {
       Logger.log(s"Creating directory ${f.getAbsolutePath}")       
-      if (!file.mkdir) {
-        throw new IOException(s"Could not create directory: ${file.getAbsolutePath}")
+      if (!f.mkdir) {
+        throw new IOException(s"Could not create directory: ${f.getAbsolutePath}")
       }
     }
   }
